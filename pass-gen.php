@@ -11,6 +11,16 @@ $wordbank = [
 	'alphabet',
 	'science',
 	'Turing',
-	'foo'
+	'foo',
+	'garlic'
 ];
 
+
+$nwords = (int) $_GET['nwords'];
+
+$password = '';
+for ($i = 0; $i < $nwords; $i++) {
+	$password .= $wordbank[rand(0, count($wordbank))] . '-';
+}
+
+$password = rtrim($password, '-');

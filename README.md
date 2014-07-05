@@ -10,3 +10,6 @@ By David Becerra
 ##Details for instructor
 
 ##Outside code
+*rtrim : http://www.php.net/manual/en/function.rtrim.php
+*count : http://www.php.net/manual/en/function.count.php
+*forms, required forms, form validation, : w3schools
