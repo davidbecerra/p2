@@ -13,12 +13,15 @@
 
 	<h1>xkcd Password Generator</h1>
 
-	<div id="pwd">
-		<h3 class="pwd"><?php echo $password; ?></h3>
-	</div>
+	<table id="pwd">
+		<tr>
+			<td><h2><?php echo $password; ?></h2></td>
+		</tr>
+	</table>
 
 	<form action="index.php" method="GET">
-		Number of Words<input type="text" name="nwords" required> (Max 9)<br>
+		Number of Words: <input type="text" name="nwords" required> (Max 9)<br>
+		<br>
 		<input type="submit" value="Generate Password">
 	</form>
 
