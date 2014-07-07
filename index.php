@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +25,7 @@
 	</table>
 
 	<form action="index.php" method="GET">
-		Number of Words: <input type="text" name="nwords" required> (Max 9)<br>
+		Number of Words: <input type="text" name="nwords" value="<?php echo $nwords; ?>" required> (Max 9)<br>
 		<br>
 		<input type="submit" value="Generate Password">
 	</form>
