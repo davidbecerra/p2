@@ -19,3 +19,33 @@ h2.pwd {
 	color: yellow;
 	text-shadow: 2px 2px #ff0000;
 }
+
+input.nwords {
+	text-align: center;
+	width: 20px;
+}
+
+div#form {
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+div#nwords {
+	/*float: left;*/
+	/*margin: ;*/
+	/*position: absolute;*/
+}
+
+div#options {
+	margin-left: 38%;
+	text-align: left;
+	padding: 5px;
+	/*float: right;*/
+	/*text-align: left;*/
+	/*position: absolute;*/
+	/*right: 400px;*/
+	/*display: inline;*/
+	/*position: relative;*/
+	/*float: right;*/
+}

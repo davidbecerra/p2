@@ -1,5 +1,6 @@
 <?php
 
+# Initialize variables
 $error_msg = '';
 $password = '';
 $nwords = '';
@@ -11,9 +12,10 @@ if (!empty($_GET)) {
 	$input = stripslashes($input);
 	$input = htmlspecialchars($input);
 
+
 	# Ensure input is integer
 	if (!is_numeric($input) || ($input > 9 || $input <= 0)) {
-		$error_msg = "Not a valid number";
+		$error_msg = "Invalid entry";
  	}
 	else {
 
@@ -28,6 +30,17 @@ if (!empty($_GET)) {
 
 		# Remove trailing hyphen
 		$password = rtrim($password, '-');
+
+		# Adjust password based on other possible options
+		if (isset($_GET['number'])) {
+			$password .= '-' . (string) rand(0, 100);
+		}
+		if (isset($_GET['upper_case'])) {
+			$password = ucfirst($password);
+		}
+		if (isset($_GET['spec_symbol'])) {
+			$password .= '@';
+		}
 	}
 }
 
