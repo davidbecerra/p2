@@ -20,7 +20,7 @@ ini_set('display_errors', 1);
 
 	<table id="pwd">
 		<tr>
-			<td><h2><?php echo $password; ?></h2></td>
+			<td><h2 class="pwd"><?php echo $password; ?></h2></td>
 		</tr>
 	</table>
 

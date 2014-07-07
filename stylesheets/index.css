@@ -9,6 +9,13 @@ table#pwd {
 	min-width: 500px;	
 	border: 3px solid black;
 	border-radius: 35px;
-	background-color: #0099ff;
+	background-color: #CC00CC;
 	box-shadow: 10px 10px 5px #888888;
+	height: 90px;
+}
+
+h2.pwd {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: yellow;
+	text-shadow: 2px 2px #ff0000;
 }
