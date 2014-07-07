@@ -20,7 +20,7 @@ $nwords = (int) $_GET['nwords'];
 
 $password = '';
 for ($i = 0; $i < $nwords; $i++) {
-	$password .= $wordbank[rand(0, count($wordbank))] . '-';
+	$password .= $wordbank[rand(0, count($wordbank) - 1)] . '-';
 }
 
 $password = rtrim($password, '-');
