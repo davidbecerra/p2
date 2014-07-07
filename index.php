@@ -12,6 +12,14 @@ ini_set('display_errors', 1);
 	<?php require "pass-gen.php" ?>
 	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 
+	<?php
+		# Echo's checked if the input field was set in GET form. Function for display purposes
+		function recall_if_checked($str) {
+			if (isset($_GET[$str]))
+				echo "checked";
+		}
+	?>
+
 </head>
 
 <body>
@@ -33,12 +41,12 @@ ini_set('display_errors', 1);
 			</div>
 			
 			<div id="options">
-				<input type="checkbox" name="number"> Include a number <br>
-				<input type="checkbox" name="spec_symbol"> Include a special symbol<br>
-				<input type="checkbox" name="upper_case"> Uppercase first letter<br>
+				<input type="checkbox" name="number" <?php recall_if_checked('number');?> > Include a number <br>
+				<input type="checkbox" name="spec_symbol" <?php recall_if_checked('spec_symbol');?> > Include a special symbol<br>
+				<input type="checkbox" name="upper_case" <?php recall_if_checked('upper_case');?> > Uppercase first letter<br>
 			</div>
 			<input type="submit" value="Generate Password" autofocus><br>
-			<span style="color: red; font-size: small;">*required field</span>
+			<span class="error"><?php echo $error_msg; ?></span>
 		</form>
 	</div>
 

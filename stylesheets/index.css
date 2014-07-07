@@ -31,21 +31,13 @@ div#form {
 	margin-right: 20%;
 }
 
-div#nwords {
-	/*float: left;*/
-	/*margin: ;*/
-	/*position: absolute;*/
-}
-
 div#options {
 	margin-left: 38%;
 	text-align: left;
 	padding: 5px;
-	/*float: right;*/
-	/*text-align: left;*/
-	/*position: absolute;*/
-	/*right: 400px;*/
-	/*display: inline;*/
-	/*position: relative;*/
-	/*float: right;*/
+}
+
+span.error {
+	color: red;
+	font-weight: bold;
 }
