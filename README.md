@@ -16,4 +16,4 @@ Type a number from 1-9 to indicate the number of words to have in the password. 
 * rtrim : http://www.php.net/manual/en/function.rtrim.php
 * count : http://www.php.net/manual/en/function.count.php
 * forms, required forms, form validation : http://www.w3schools.com
-* dictionary of words: Courtesy of Maxim Sukharev-Chuyan (a fellow student in the class) URL: https://github.com/maximsc/p2/blob/master/wordlists/words9.txt
+* dictionary of words: for text-> https://d1b10bmlvqabco.cloudfront.net/attach/ht1cmoh734q7lz/hwtu32ltlu3kx/hx6nwrvbr9fu/wordlist.txt    source -> http://www.englishclub.com/vocabulary/common-words-5000.htm
