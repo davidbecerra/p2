@@ -50,6 +50,18 @@ ini_set('display_errors', 1);
 		</form>
 	</div>
 
+	<div id="description">
+		<h2 class="description">Site Description</h2>
+			<p>
+				This webpage is a random password generator. More specifically, the password is a random collection of English words, special characters, and numbers. To use the application, you must first type a number between 1 and 9 in the entry above. This indicates the number of English words you want in your random password. This is all you need to generate a random password! The checkboxes are further options to make your random password even harder to crack. Currently, the number and special character are added at the end of the password.
+			</p>
+		<h2 class="description">What is an xkcd password?</h2>
+			<p>
+				We are often mislead into thinking a single word with a random selection of numbers and characters is the most effective password. However, passwords like these can be easy to track. To make matters worse, they are a pain to remember. The webcomic xkcd released one comic that unveiled a new style of password that is difficult to crack and easy to remember. This xkcd-style password is composed a random collection common words stringed together. This web application generates passwords with this style in mind.  
+			</p>
+	</div>
+			<img src="http://imgs.xkcd.com/comics/password_strength.png ">
+
 </body>
 
 </html>
